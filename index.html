@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PRE-LAUNCH NOTES (remove when deploying):
+     1. Contact email theagencyuniverse@gmail.com is TO BE CREATED (Collin's account
+        session). Do not deploy until the inbox exists and is monitored.
+     2. The quote form ships UNCONNECTED (placeholder endpoint) — see the form
+        section comment. Wire it to a free-tier form endpoint under the agency
+        account before deploying, then remove the visible form note + the
+        preview-only script.
+     3. Set the canonical URL + og:url once the hosting domain is known. -->
+<title>WebFix Local — Small Business Websites &amp; Google Listings in Grand Rapids, MI</title>
+<meta name="description" content="Website fixes ($750 flat) and Google listing fix-ups ($249) for Grand Rapids, MI service businesses — plus care plans from $300/mo and a free first look at your site and listing.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WebFix Local — Websites & Google Listings for Grand Rapids Service Businesses">
+<meta property="og:description" content="Flat-price website fixes ($750), Google listing fix-ups ($249), and care plans for local service businesses in Grand Rapids, MI. Free first look.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "WebFix Local",
+  "description": "One-page website fixes, Google Business Profile fix-ups and management, and website care plans for local service businesses in Grand Rapids, Michigan.",
+  "email": "theagencyuniverse@gmail.com",
+  "parentOrganization": { "@type": "Organization", "name": "The Agency Universe" },
+  "areaServed": [
+    { "@type": "City", "name": "Grand Rapids" },
+    { "@type": "AdministrativeArea", "name": "Kent County, Michigan" }
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "One-Page Website Fix" },
+      "priceSpecification": { "@type": "PriceSpecification", "price": "750", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Google Business Profile Fix-Up" },
+      "priceSpecification": { "@type": "PriceSpecification", "price": "249", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Google Business Profile Management" },
+      "priceSpecification": { "@type": "PriceSpecification", "price": "250", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Website Care Plan" },
+      "priceSpecification": { "@type": "PriceSpecification", "minPrice": "300", "maxPrice": "500", "priceCurrency": "USD" }
+    }
+  ]
+}
+</script>
+<style>
+/* Brand system inherited from the WebFix Local one-page template (our own
+   template pack) — same CSS the studio sells, used on our own site. */
+:root{--ink:#16202a;--muted:#5b6b7a;--line:#dbe3ea;--bg:#ffffff;--soft:#f3f6f8;--brand:#0b5fa5;--brand-dark:#084a82;--ok:#0a6b3a;--radius:14px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--brand)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.site{position:sticky;top:0;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+.logo{font-weight:800;font-size:1.15rem;color:var(--ink);text-decoration:none;line-height:1.1}
+.logo span{display:block;font-size:.78rem;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:999px;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:var(--brand-dark)}
+.btn.secondary{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+.btn.small{padding:9px 16px;font-size:.95rem}
+.hero{background:var(--soft);border-bottom:1px solid var(--line)}
+.hero .wrap{padding-top:44px;padding-bottom:44px}
+.hero h1{font-size:2rem;line-height:1.15;margin:0 0 12px}
+.hero p{color:var(--muted);max-width:640px;margin:0 0 20px;font-size:1.05rem}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-meta{margin-top:16px;font-size:.95rem;color:var(--muted)}
+section{padding:44px 0}
+h2{font-size:1.5rem;margin:0 0 8px;line-height:1.2}
+.lede{color:var(--muted);max-width:680px;margin:0 0 24px}
+.grid{display:grid;gap:16px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
+.card h3{margin:0 0 8px;font-size:1.1rem}
+.card p{margin:0;color:var(--muted)}
+.card ul{margin:10px 0 0;padding-left:18px;color:var(--muted)}
+.price{font-size:1.35rem;font-weight:800;color:var(--ink);margin:0 0 6px}
+.price small{font-size:.85rem;font-weight:600;color:var(--muted)}
+.tag{display:inline-block;background:#fff3cd;border:1px solid #e5c15c;color:#7a5b00;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px}
+form.quote{display:grid;gap:14px}
+label{font-weight:650;font-size:.95rem;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--brand);outline-offset:1px}
+.field-error{color:#b42318;font-size:.88rem;margin-top:6px;display:none}
+.form-note{color:var(--muted);font-size:.9rem;margin:0}
+.success{display:none;border:1px solid #a6d8b8;background:#eef8f1;color:var(--ok);border-radius:10px;padding:14px 16px;font-weight:600}
+.contact-box{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.contact-box p{margin:6px 0;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.92rem}
+@media(min-width:720px){
+  .hero h1{font-size:2.7rem}
+  .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  .grid.cols-2{grid-template-columns:1fr 1fr}
+  form.quote .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top">WebFix Local<span>Websites &amp; Google Listings · Grand Rapids, MI</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#services">Services &amp; Prices</a>
+      <a href="#sample">Sample Work</a>
+      <a href="#how">How It Works</a>
+      <a href="#contact">Contact</a>
+      <a class="btn small" href="#quote">Get a Free Check</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <h1>Your customers Google your shop before they call it. What do they find?</h1>
+      <p>WebFix Local is a small studio in Grand Rapids that fixes the two things customers see first: your <strong>Google listing</strong> and your <strong>website</strong>. Flat prices, no hourly meter, and a free first look — we check both and tell you, in plain words, what we find.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#quote">Get a Free Check</a>
+        <a class="btn secondary" href="#services">See Services &amp; Prices</a>
+      </div>
+      <p class="hero-meta">Serving Grand Rapids &amp; Kent County service businesses — HVAC, plumbing, electrical, and the trades · First reply within one business day</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Services &amp; prices — flat, in writing, before you commit</h2>
+      <p class="lede">Three offers. Buy them together or separately; each is reported separately. No rankings promised, ever — Google itself says nobody can sell those. We sell the work, the corrections, and the reporting.</p>
+      <div class="grid cols-3">
+        <article class="card">
+          <h3>One-Page Website Fix</h3>
+          <p class="price">$750 <small>one-time</small></p>
+          <p>Your front door, rebuilt: one clean page that works on phones and turns visitors into calls.</p>
+          <ul>
+            <li>Secure (https) site with your real services and words</li>
+            <li>Tap-to-call button + quote form up front</li>
+            <li>Mobile-first — most customers arrive on a phone</li>
+            <li>Static build: no database, no logins, no plugins to break</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Google Listing Fix-Up</h3>
+          <p class="price">$249 <small>one-time · then $250/mo management</small></p>
+          <p>Your Google Business Profile is what shows in Maps and search — before your website ever loads.</p>
+          <ul>
+            <li>Full audit first: hours, categories, services, photos, links</li>
+            <li>Corrections made to match reality — no stale hours</li>
+            <li>Management: posts, every review replied to, photo updates</li>
+            <li>You keep ownership — we work as a manager. No passwords, ever</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Website Care Plan</h3>
+          <p class="price">$300–500 <small>per month</small></p>
+          <p>Websites quietly rot: prices change, links break, forms stop landing. We keep yours current.</p>
+          <ul>
+            <li>Content updates you send us — text, prices, photos, hours</li>
+            <li>Link, form, and contact-detail checks</li>
+            <li>Uptime and speed spot-checks</li>
+            <li>A plain-English monthly report</li>
+          </ul>
+        </article>
+      </div>
+      <p class="lede" style="margin-top:20px">Bundle: care plan + Google listing management together are <strong>$399/mo</strong>. For a shop that already has a website, the $249 listing fix-up is the cheaper first yes.</p>
+    </div>
+  </section>
+
+  <section id="sample" style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <h2>Sample work — labeled as a sample, on purpose</h2>
+      <p class="lede">We're a new studio, and we'd rather show you exactly how we work than borrow someone else's results.</p>
+      <div class="grid cols-2">
+        <article class="card">
+          <span class="tag">Sample design</span>
+          <h3>Northline Heating &amp; Air — a fictional company</h3>
+          <p>We built a complete one-page website for a made-up heating company to demonstrate the deliverable: quote form, services, service-area and contact sections, basic on-page SEO structure — built static, so it loads fast and has almost nothing that can break. Your site is built the same way, from your real name, services, photos, and words. Ask us and we'll walk you through the sample in a short video or in person.</p>
+        </article>
+        <article class="card">
+          <h3>Why there's no testimonial wall here</h3>
+          <p>Because we won't invent one. No fake reviews, no borrowed logos, no "results" we didn't produce. When client work is live and a client says we can show it, it will appear here with their name on it — and not before. Until then, the sample above and the free check below are how you judge us: on the work itself.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <p class="lede">No cold calls from us, no pressure from anyone. You start it, when you're ready.</p>
+      <div class="grid cols-3">
+        <article class="card">
+          <h3>1. You ask for the free check</h3>
+          <p>Send the form below or email us. We look at your website and your Google listing — the same audit checklist we run for paying clients.</p>
+        </article>
+        <article class="card">
+          <h3>2. You get the findings</h3>
+          <p>A short, plain-words rundown of what's broken, what's stale, and what it's costing you — with the flat price to fix it. Keep it even if you never hire us.</p>
+        </article>
+        <article class="card">
+          <h3>3. You decide</h3>
+          <p>If you hire us, we build it, check it, and show you before it goes live. Defects in our work are fixed free for 30 days. Changes after that are what the care plan is for.</p>
+        </article>
+      </div>
+      <p class="lede" style="margin-top:20px">And if something ever breaks, you never do tech support: message us, we triage it, fix it, and verify the fix before we call it done.</p>
+    </div>
+  </section>
+
+  <section id="quote">
+    <div class="wrap">
+      <h2>Get your free website &amp; listing check</h2>
+      <p class="lede">Tell us which shop is yours. The check is free, the findings are yours to keep, and there's no obligation attached.</p>
+
+      <!-- FORM ENDPOINT PLACEHOLDER: This form ships UNCONNECTED — submitting it
+           only shows an on-page message and sends nothing. Before deploying,
+           point it at a free-tier form endpoint under the agency account
+           (e.g., a form-to-email service) or the marketplace inbox, per the
+           README. Then remove the preview script and the form note below. -->
+      <form class="quote" id="quoteForm" novalidate>
+        <div class="row">
+          <div>
+            <label for="name">Your name *</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith">
+            <div class="field-error" id="err-name">Please enter your name.</div>
+          </div>
+          <div>
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@yourshop.com">
+            <div class="field-error" id="err-email">Please enter a valid email — that's where your free check goes.</div>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="business">Business name *</label>
+            <input id="business" name="business" type="text" autocomplete="organization" required placeholder="Your Shop, LLC">
+            <div class="field-error" id="err-business">Please enter your business name.</div>
+          </div>
+          <div>
+            <label for="service">What should we look at?</label>
+            <select id="service" name="service">
+              <option>Check everything — website + Google listing</option>
+              <option>Website fix ($750)</option>
+              <option>Google listing fix-up ($249)</option>
+              <option>Care plan / listing management</option>
+              <option>Not sure — advise me</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="link">Your website or Google listing link (optional)</label>
+          <input id="link" name="link" type="url" placeholder="https://…">
+        </div>
+        <div>
+          <label for="message">Anything we should know?</label>
+          <textarea id="message" name="message" placeholder="Example: our hours on Google are wrong and the site hasn't been touched since 2019…"></textarea>
+        </div>
+        <div class="success" id="formSuccess" role="status" aria-live="polite"></div>
+        <div>
+          <button class="btn" type="submit">Request My Free Check</button>
+        </div>
+        <p class="form-note">Note: this page is in pre-launch and the form isn't wired up yet — email us directly at <a href="mailto:theagencyuniverse@gmail.com">theagencyuniverse@gmail.com</a> and we'll run your check the same way.</p>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" style="background:var(--soft);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="lede">One inbox, answered by the studio crew — first reply within one business day.</p>
+      <div class="grid cols-2">
+        <div class="contact-box">
+          <h3 style="margin-top:0">WebFix Local</h3>
+          <!-- Agency inbox of record. TO BE CREATED in Collin's account session
+               (see pre-launch notes in <head>). -->
+          <p><strong>Email:</strong> <a href="mailto:theagencyuniverse@gmail.com">theagencyuniverse@gmail.com</a></p>
+          <p><strong>Service area:</strong> Grand Rapids &amp; Kent County, Michigan — we work remotely, your shop never has to host us</p>
+          <p><strong>Studio:</strong> WebFix Local is the local-services studio of The Agency Universe, a small AI-assisted digital studio. Modern tools make the build fast; a human-standard QA checklist makes it right.</p>
+        </div>
+        <div class="card">
+          <h3>What happens next</h3>
+          <p>1. You send the form or an email.<br>2. We run the free check and send your findings within one business day of reply.<br>3. You decide — fix it with us, fix it yourself, or hand it to your current website person. The findings are yours either way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>WebFix Local</strong> · The Agency Universe · Grand Rapids, Michigan</p>
+    <p>© 2026 The Agency Universe. Prices on this page are the real ones — the same flat prices we quote everywhere.</p>
+  </div>
+</footer>
+
+<script>
+/* PRE-LAUNCH PREVIEW SCRIPT: validates the form in the browser and shows a
+   message, but sends NOTHING — the form endpoint is a placeholder until the
+   agency account + hosting are set up (see README). When the endpoint is
+   wired, remove this script block and the form's "novalidate" attribute. */
+(function(){
+  var form=document.getElementById('quoteForm');
+  var success=document.getElementById('formSuccess');
+  function showErr(id,show){var el=document.getElementById(id); if(el) el.style.display=show?'block':'none';}
+  function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('name').value.trim();
+    var email=document.getElementById('email').value.trim();
+    var business=document.getElementById('business').value.trim();
+    var ok=true;
+    showErr('err-name',!name); if(!name) ok=false;
+    showErr('err-email',!validEmail(email)); if(!validEmail(email)) ok=false;
+    showErr('err-business',!business); if(!business) ok=false;
+    if(!ok){success.style.display='none'; return;}
+    success.textContent='Thanks, '+name+' — this page is in pre-launch, so the form did not send anything yet. Email us at theagencyuniverse@gmail.com with your business name and we will run the free check for '+business+' the same way.';
+    success.style.display='block';
+    form.reset();
+    success.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+  ['name','email','business'].forEach(function(id){
+    var el=document.getElementById(id);
+    el.addEventListener('input',function(){showErr('err-'+id,false);});
+    el.addEventListener('change',function(){showErr('err-'+id,false);});
+  });
+})();
+</script>
+</body>
+</html>
