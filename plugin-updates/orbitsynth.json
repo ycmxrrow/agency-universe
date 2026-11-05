@@ -1,0 +1,6 @@
+{
+ "notes": "OrbitSynth 1.0.0 - initial release. Original synth workstation: dual oscillators with 7-voice unison, TPT ladder filter, dual ADSR envelopes, dual LFOs, chorus/delay/reverb, 68 factory presets, cloud update check.",
+ "sha256": "5c3c3b4e7570ee8b97ab7c1fcd55fdcdd9de2feb783f4f1c3dcce2b354b1dad5",
+ "url": "https://ycmxrrow.github.io/agency-universe/plugin-updates/OrbitSynth-1.0.vst3.zip",
+ "version": "1.0.0"
+}
