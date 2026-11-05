@@ -1,6 +1,1 @@
-{
- "notes": "OrbitSynth 1.0.0 - initial release. Original synth workstation: dual oscillators with 7-voice unison, TPT ladder filter, dual ADSR envelopes, dual LFOs, chorus/delay/reverb, 68 factory presets, cloud update check.",
- "sha256": "5c3c3b4e7570ee8b97ab7c1fcd55fdcdd9de2feb783f4f1c3dcce2b354b1dad5",
- "url": "https://ycmxrrow.github.io/agency-universe/plugin-updates/OrbitSynth-1.0.vst3.zip",
- "version": "1.0.0"
-}
+{"notes":"OrbitSynth 1.0.1 - editor fix. The 1.0.0 build was compiled without the HAVE_DGL define, so DPF silently built it as a no-UI plug-in and the editor window never opened in FL Studio (audio was unaffected). 1.0.1 restores the full editor: preset browser, filter/envelope graphs, playable keyboard. Audio engine unchanged - all 68 presets, tuning and polyphony re-verified identical.","sha256":"a1368c0243bf2f867f75fa8905001b6672f33c1cc8dd6350cd5e45b8a6faa06d","url":"https://ycmxrrow.github.io/agency-universe/plugin-updates/OrbitSynth-1.0.1.vst3.zip","version":"1.0.1"}
