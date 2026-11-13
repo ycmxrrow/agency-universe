@@ -1,1 +1,6 @@
-{"notes":"OrbitSynth 1.0.1 - editor fix. The 1.0.0 build was compiled without the HAVE_DGL define, so DPF silently built it as a no-UI plug-in and the editor window never opened in FL Studio (audio was unaffected). 1.0.1 restores the full editor: preset browser, filter/envelope graphs, playable keyboard. Audio engine unchanged - all 68 presets, tuning and polyphony re-verified identical.","sha256":"a1368c0243bf2f867f75fa8905001b6672f33c1cc8dd6350cd5e45b8a6faa06d","url":"https://ycmxrrow.github.io/agency-universe/plugin-updates/OrbitSynth-1.0.1.vst3.zip","version":"1.0.1"}
+{
+  "version": "1.0.3",
+  "sha256": "e1469f2d2bef33b5d4605cbc552d54ba4f9705ff16e983a16728abbb9817e15c",
+  "notes": "OrbitSynth 1.0.3: always-visible Check for updates button, installed/cloud version status, offline retry and bounded requests. Includes 1.0.2 preset recall, first-note glide and 68-preset level fixes. Sound-bank import is not part of this maintenance release.",
+  "url": "https://ycmxrrow.github.io/agency-universe/plugin-updates/OrbitSynth-1.0.3.vst3.zip"
+}
