@@ -1,6 +1,6 @@
 {
-  "version": "1.0.3",
-  "sha256": "e1469f2d2bef33b5d4605cbc552d54ba4f9705ff16e983a16728abbb9817e15c",
-  "notes": "OrbitSynth 1.0.3: always-visible Check for updates button, installed/cloud version status, offline retry and bounded requests. Includes 1.0.2 preset recall, first-note glide and 68-preset level fixes. Sound-bank import is not part of this maintenance release.",
-  "url": "https://ycmxrrow.github.io/agency-universe/plugin-updates/OrbitSynth-1.0.3.vst3.zip"
+  "url": "https://ycmxrrow.github.io/agency-universe/plugin-updates/OrbitSynth-1.0.4.vst3.zip",
+  "sha256": "bb4401378ba69c164d031ab2ff49ea0246fbeca0e5ef6fc5a12667f1f5df7e6b",
+  "version": "1.0.4",
+  "notes": "OrbitSynth 1.0.4: compact update icon; explicit Up to date result; five-second check timeout with retry and stale-response protection. Retains the verified 68-preset audio fixes. Sound-bank import is not included."
 }
