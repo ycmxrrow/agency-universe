@@ -1,6 +1,6 @@
 {
-  "url": "https://ycmxrrow.github.io/agency-universe/plugin-updates/OrbitSynth-1.0.4.vst3.zip",
-  "sha256": "bb4401378ba69c164d031ab2ff49ea0246fbeca0e5ef6fc5a12667f1f5df7e6b",
-  "version": "1.0.4",
-  "notes": "OrbitSynth 1.0.4: compact update icon; explicit Up to date result; five-second check timeout with retry and stale-response protection. Retains the verified 68-preset audio fixes. Sound-bank import is not included."
+  "url": "https://ycmxrrow.github.io/agency-universe/plugin-updates/OrbitSynth-1.0.5.vst3.zip",
+  "sha256": "689e63d66545006cfe3a9ac6edc0764acf89307c1fa81fa2171dab54876e4dff",
+  "version": "1.0.5",
+  "notes": "OrbitSynth 1.0.5: updates now install from inside FL Studio - click the update icon and it finishes by itself when FL closes, no manual steps or scripts to run. The update control is one compact header icon with a short status, and update checks always end with a clear result (up to date, available, or tap to retry) instead of hanging. Retains the verified 68-preset audio fixes."
 }
